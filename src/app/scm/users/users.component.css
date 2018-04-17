@@ -1,0 +1,42 @@
+  .body{
+    margin-top: 5px;
+    height: auto;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    float: left;
+ }
+ .name h5{
+     
+    color: #fbbc05;
+    font-size:30px;
+ }
+ 
+ .icon{
+    background-color: #fbbc05;
+    color: white;
+    border-radius: 10px;
+    font-size:17px;
+    margin-top: 10px;
+    
+ }
+ .address h5{
+    color: lightgrey;
+ }
+ .payment h4{
+    font-size: 22px;
+    color: #d23c30;
+ }
+ .button i{
+  background-color: white;
+  color: #fbbc05;
+  bottom: 40px;
+  font-size: 30px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 90px;
+  
+}
+.input-group input {
+  font-size: 16px;
+}

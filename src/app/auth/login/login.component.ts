@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
   }
   getPasswordError() {
     return this.password.hasError('required') ? 'required password ' :
-        // this.password.hasError('password') ? 'Not a valid password' :
         '';
   }
   

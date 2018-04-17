@@ -1,3 +1,47 @@
-<p>
-  users works!
-</p>
+<mat-toolbar>Users</mat-toolbar>
+<div class="input-group">
+  <i class="material-icons">search</i>
+  <input class="form-control" placeholder="Name,Address,Ph.no">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 body" *ngFor="let item of list">
+        <div class="row">
+          <div class="col-md-8 name">
+            <h5 (click)="onSelect(item)">{{item.name}}</h5>
+          </div>
+          <div class="col-md-4 text-right">
+            <a routerLink="../personaldetails">
+              <i class="material-icons icon">mode_edit</i>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 phno">
+            <h6>{{item.mobile}}</h6>
+          </div>
+          <div class="col-md-8 username">
+            <h6>{{item.email}}</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 address">
+            <h5>{{item.address}}</h5>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 payment">
+            <h5>{{item.paymentdue}}</h5>
+            <h4>{{item.amount}}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <a routerLink="../userregistration">
+        <i class="material-icons">add_circle</i>
+      </a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

@@ -4,3 +4,12 @@
     margin: 0px;
     padding: 0px;
 }
+.basic-container {
+    padding: 5px;
+  }
+  
+  .version-info {
+    font-size: 8pt;
+    float: right;
+  }
+  

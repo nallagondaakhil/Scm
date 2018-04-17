@@ -1,0 +1,94 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 body">
+      <div class="row">
+        <div class="col-md-8 head">
+          <h5>Personal Details :</h5>
+        </div>
+        <div class="col-md-4">
+          <div class="button-row savebutton">
+            <button mat-button>Save</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="name">
+                <input matInput placeholder="Name" [formControl]="name" required>
+                <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="number">
+                <input matInput placeholder="Ph.no" [formControl]="number" required>
+                <mat-error *ngIf="number.invalid">{{getNumber()}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="mail">
+                <input matInput placeholder="Email" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getEmail()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class=" col-md-3 ">
+              <mat-form-field class="community">
+                <mat-select placeholder="Community">
+                  <mat-option>None</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3 ">
+              <mat-form-field class="subcommunity">
+                <mat-select placeholder="Sub-Community">
+                  <mat-option>None</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3 ">
+              <mat-form-field class="flat">
+                <input matInput placeholder="Flat No." [formControl]="flat" required>
+                <mat-error *ngIf="flat.invalid">{{getFlat()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class=" col-md-3 ">
+              <mat-form-field class="loc">
+                <input matInput placeholder="Locality" [formControl]="loc" required>
+                <mat-error *ngIf="loc.invalid">{{getLoc()}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3 ">
+              <mat-form-field class="city">
+                <input matInput placeholder="City" [formControl]="city" required>
+                <mat-error *ngIf="city.invalid">{{getCity()}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3 ">
+              <mat-form-field class="state">
+                <input matInput placeholder="State" [formControl]="state" required>
+                <mat-error *ngIf="state.invalid">{{getState()}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3 ">
+              <mat-form-field class="pin">
+                <input matInput placeholder="Pincode" [formControl]="pin" required>
+                <mat-error *ngIf="pin.invalid">{{getPincode()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
