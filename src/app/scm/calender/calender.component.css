@@ -1,0 +1,31 @@
+.body{
+  margin-top: 20px;
+  height: auto;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  float: left;
+}
+  .name img {
+   width: 70px;
+  }
+  .name h3{
+    font-weight: bold;
+    font-size: 15px;
+
+  }
+  .name h6{
+    font-size: 16px;
+    color: rgba(128, 120, 120, 0.87);
+  }
+  .name h4{
+    color: rgba(128, 120, 120, 0.87);
+  }
+  .name h2{
+    margin-top: 40px;
+    font-size: 22px;
+  }
+  .input-group input {
+    font-size: 16px;
+  }
+  
