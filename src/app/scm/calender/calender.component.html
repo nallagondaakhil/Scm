@@ -3,18 +3,16 @@
   <input class="form-control" placeholder="Name,Address,Ph.no">
 </div>
 <h2> Milk Subscription Details</h2>
-<mat-form-field>
+<!-- <mat-form-field>
         <input matInput [matDatepicker]="picker" placeholder="Choose a date">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
-      
-</mat-form-field>
-
+</mat-form-field> -->
 <div class="container-fluid">
-  <div class="col-md-12 ">
-    <div class="col-md-4 body" *ngFor="let item of list">
-     
-        <div class="row ">
+  <div class="row">
+    <div class="col-md-12 ">
+      <div class="col-md-4 body" *ngFor="let item of list">
+        <div class="row">
 
           <div class="col-md-4 name">
             <img src="{{item.imagepath}}">
@@ -30,12 +28,10 @@
           <div class="col-md-4 name">
             <h2>{{item.price}}</h2>
           </div>
-
         </div>
-      
+      </div>
     </div>
   </div>
-
 </div>
 
 <router-outlet></router-outlet>
